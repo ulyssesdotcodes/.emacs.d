@@ -1,0 +1,9 @@
+ls
+ls
+1 + 2
+list 1 2 3
+cast
+cask
+adb -d logcat
+cd .emacs.d/
+cask install
