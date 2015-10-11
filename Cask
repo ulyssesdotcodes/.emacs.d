@@ -8,4 +8,6 @@
 (depends-on "helm")
 (depends-on "flycheck")
 (depends-on "flycheck-cask")
+(depends-on "magit")
+(depends-on "ssh-agency")
 (depends-on "use-package")

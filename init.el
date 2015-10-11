@@ -1,8 +1,12 @@
+(setq visible-bell 1)
+
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
 
 (defvar dotfiles-dir (file-name-directory
                       (or (buffer-file-name) load-file-name)))
+
+(setenv "SSH_ASKPASS" "git-gui--askpass")
 
 (load (concat dotfiles-dir "init-packages.el"))
 
@@ -16,10 +20,10 @@
 (define-key evil-normal-state-map "j" 'next-line)
 (define-key evil-normal-state-map "k" 'previous-line)
 
-(global-set-key "\C-j" 'windmove-left)
-(global-set-key (kbd "C-;") 'windmove-right)
+(global-set-key "\C-h" 'windmove-left)
+(global-set-key (kbd "C-l") 'windmove-right)
 (global-set-key "\C-k" 'windmove-up)
-(global-set-key (kbd "C-l") 'windmove-down)
+(global-set-key (kbd "C-j") 'windmove-down)
 
 (global-set-key (kbd "C--") 'pop-global-mark)
 (global-set-key (kbd "C-S--") 'goto-last-change)
