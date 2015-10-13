@@ -1,0 +1,4 @@
+alias ga git add $1
+alias gst git status
+alias ls ls -al
+alias emacs find-file $1

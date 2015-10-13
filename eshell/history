@@ -7,3 +7,46 @@ cask
 adb -d logcat
 cd .emacs.d/
 cask install
+ls
+la
+ls -al
+alias ls 'ls -al'
+ls
+ls
+alias emacs 'find-file $1'
+emacs ~/.emacs.d/init.el 
+cd ~/Development/SlingshotSmoke/
+cp -p ../AVSyn/assets/fluid/* ./assets/fluid
+mkdir ./assets/fluid
+cp ../AVSyn/assets/fluid/* ./assets/fluid
+ls ./assets/fluid/
+fdsafdsa
+cd ~/Development/SlingshotSmoke/
+gst
+alias gst 'git status'
+gst
+alias ga 'git add'
+ga .
+ga --all
+ga .
+alias ga 'git add $1'
+ga .
+gst
+cp ../AVSyn/assets/passthru.vert ./assets/
+cd assets/fluid/
+ls
+rm advect.vert
+cat advectR.frag
+ls
+rm apply_force.vert
+rm *.vert
+ls
+rm advectR.frag
+ls
+cd ~/Development/SlingshotSmoke/
+ls
+cp ../AVSyn/assets/texture.frag ./assets/
+ls assets/
+cd assets/
+ls
+cd ..

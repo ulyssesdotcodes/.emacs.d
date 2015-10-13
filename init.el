@@ -13,7 +13,7 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 
 (when window-system
-  (load-theme 'solarized-dark t))
+  (load-theme 'zenburn t))
 
 (add-hook 'term-mode-hook 'term-line-mode)
 
@@ -47,3 +47,5 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+(load (concat dotfiles-dir "init-keyboard.el"))
